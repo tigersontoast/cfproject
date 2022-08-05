@@ -10,25 +10,7 @@ BUFFER_SIZE = 1024
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((TCP_IP, TCP_PORT))
 
-while True:
-    prompt = input("\nEnter a command: ")
-    if prompt[:4].upper() == "QUIT":
-        quit()
-        break
-    elif prompt[:4].upper() == "LIST":
-        break
-    else:
-        print("Command not recognised; please try again")
-
-def quit():
-    s.send("QUIT")
-    s.recv(BUFFER_SIZE)
-    s.close()
-    print("Server connection ended")
-    return
-
-
-def  list_files():
+def list_files():
     print("Requesting files... \n")
     try:
         s.send("LIST")
@@ -54,3 +36,23 @@ def  list_files():
     except:
         print("could not get server confirmation")
         return
+
+
+def quit():
+    data = str.encode("QUIT")
+    s.send(data)
+    s.recv(BUFFER_SIZE).decode(encoding='utf_8', errors='strict')
+    s.close()
+    print("Server connection ended")
+    return
+
+
+while True:
+    prompt = input("\nEnter a command: ")
+    if prompt[:4].upper() == "LIST":
+        list_files()
+    elif prompt[:4].upper() == "QUIT":
+        quit()
+        break
+    else:
+        print("Command not recognised; please try again")
