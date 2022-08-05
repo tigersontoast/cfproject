@@ -7,7 +7,7 @@ import struct
 print("\nWelcome to the FTP server.\n\nTo get started, connect a client")
 TCP_IP = "127.0.0.1"
 TCP_PORT = 21
-BUFFER_SIZE = 1024
+BUFFER_SIZE = 4096
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((TCP_IP, TCP_PORT))
 s.listen(1)
@@ -45,7 +45,7 @@ def main():
         data = None
 
 def quit():
-    conn.send(str.encode("1"))
+    conn.send("1".encode())
     conn.close()
     s.close()
     os.execl(sys.executable, sys.executable, *sys.argv)

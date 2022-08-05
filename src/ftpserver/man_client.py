@@ -6,14 +6,18 @@ from ftplib import FTP
 
 TCP_IP = "127.0.0.1" 
 TCP_PORT = 21
-BUFFER_SIZE = 1024
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((TCP_IP, TCP_PORT))
+BUFFER_SIZE = 4096
+#with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+#    s.connect((TCP_IP, TCP_PORT))
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+
 
 def list_files():
     print("Requesting files... \n")
     try:
-        s.send("LIST")
+        s.send("LIST".encode())
     except:
         print("could not connect")
         return
@@ -31,16 +35,24 @@ def list_files():
         print("could nto retrieve listing")
         return
     try:
-        s.send(1)
+        s.send("1")
         return
     except:
         print("could not get server confirmation")
         return
 
+def conn():
+    print("sending server request")
+    try:
+        s.connect((TCP_IP, TCP_PORT))
+        print("success")
+    except:
+        print("unsuccess")
+
 
 def quit():
-    data = str.encode("QUIT")
-    s.send(data)
+    data = "QUIT"
+    s.sendall(bytes(data, "utf-8"))
     s.recv(BUFFER_SIZE).decode(encoding='utf_8', errors='strict')
     s.close()
     print("Server connection ended")
@@ -51,6 +63,8 @@ while True:
     prompt = input("\nEnter a command: ")
     if prompt[:4].upper() == "LIST":
         list_files()
+    elif prompt[:4].upper() == "CONN":
+        conn()
     elif prompt[:4].upper() == "QUIT":
         quit()
         break
