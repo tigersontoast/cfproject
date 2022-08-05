@@ -15,6 +15,7 @@ conn, addr = s.accept()
 
 print("\nConnected to by address: {}".format(addr))
 
+
 def list_files():
     print("Listing files...")
     listing = os.listdir(os.getcwd())
@@ -34,9 +35,12 @@ def list_files():
 def main():
     while True:
         data = conn.recv(BUFFER_SIZE)
+        data = data.decode(encoding='utf_8', errors='strict')
         if data == "LIST":
+            print("LIST")
             list_files()
         elif data == "QUIT":
+            print("QUIT")
             quit()
         data = None
 
