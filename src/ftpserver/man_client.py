@@ -32,7 +32,7 @@ def list_files():
             total_directory_size = struct.unpack("i", s.recv(4))[0]
             print("Total directory size: {}b").format(total_directory_size)
     except:
-        print("could nto retrieve listing")
+        print("could not retrieve listing")
         return
     try:
         s.send("1")
