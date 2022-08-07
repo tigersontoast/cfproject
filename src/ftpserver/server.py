@@ -1,4 +1,5 @@
 import os
+import logging
 
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
@@ -19,6 +20,9 @@ def main():
 
     # Define a customized banner (string returned when client connects)
     handler.banner = "pyftpdlib based ftpd ready."
+
+    #need to change directory
+    logging.basicConfig(filename='logging/ftp.log', level=logging.INFO)
 
     # Instantiate FTP server class and listen on 127.0.0.1:2121
     address = ('127.0.0.1', 2121)
