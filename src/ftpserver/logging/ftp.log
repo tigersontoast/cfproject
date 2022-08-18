@@ -1,0 +1,16 @@
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=12700 <<<
+INFO:pyftpdlib:127.0.0.1:58752-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:58752-[user] USER 'user' logged in.
+INFO:pyftpdlib:127.0.0.1:58752-[user] FTP session closed (disconnect).
+INFO:pyftpdlib:received interrupt signal
+INFO:pyftpdlib:>>> shutting down FTP server, 1 socket(s), pid=12700 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=12804 <<<
+INFO:pyftpdlib:127.0.0.1:45250-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:45250-[user] USER 'user' logged in.
+INFO:pyftpdlib:127.0.0.1:45250-[user] FTP session closed (disconnect).
