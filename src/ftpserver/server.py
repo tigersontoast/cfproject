@@ -32,8 +32,10 @@ def main():
     server.max_cons = 256
     server.max_cons_per_ip = 5
 
+    print("Starting FTP server...")
     # start ftp server
     server.serve_forever()
+    
 
 if __name__ == '__main__':
     main()

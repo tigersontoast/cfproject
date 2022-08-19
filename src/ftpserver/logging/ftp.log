@@ -14,3 +14,58 @@ INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=12804 <<<
 INFO:pyftpdlib:127.0.0.1:45250-[] FTP session opened (connect)
 INFO:pyftpdlib:127.0.0.1:45250-[user] USER 'user' logged in.
 INFO:pyftpdlib:127.0.0.1:45250-[user] FTP session closed (disconnect).
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=22364 <<<
+INFO:pyftpdlib:127.0.0.1:60097-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60097-[user] USER 'user' logged in.
+INFO:pyftpdlib:127.0.0.1:60097-[user] FTP session closed (disconnect).
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=5504 <<<
+INFO:pyftpdlib:127.0.0.1:60317-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60317-[user] USER 'user' logged in.
+INFO:pyftpdlib:127.0.0.1:60317-[user] FTP session closed (disconnect).
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=23620 <<<
+INFO:pyftpdlib:127.0.0.1:60335-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60335-[] CWD files 530 'Log in with USER and PASS first.'
+INFO:pyftpdlib:127.0.0.1:60335-[] FTP session closed (disconnect).
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=24756 <<<
+INFO:pyftpdlib:127.0.0.1:60350-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60350-[user] USER 'user' logged in.
+INFO:pyftpdlib:127.0.0.1:60350-[user] FTP session closed (disconnect).
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=11216 <<<
+INFO:pyftpdlib:127.0.0.1:60361-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60361-[user] USER 'user' logged in.
+INFO:pyftpdlib:127.0.0.1:60361-[user] CWD C:\Users\Jacob\OneDrive - University of Leeds\Cyber Academy\Group Project\repo\src\ftpserver\files 250
+INFO:pyftpdlib:127.0.0.1:60361-[user] FTP session closed (disconnect).
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=22804 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
+INFO:pyftpdlib:>>> starting FTP server on 127.0.0.1:2121, pid=16532 <<<
+INFO:pyftpdlib:127.0.0.1:60444-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60444-[] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:60450-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:60450-[] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:51438-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51438-[] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:51442-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51442-[] Control connection timed out.
+INFO:pyftpdlib:127.0.0.1:51442-[] FTP session closed (disconnect).
+INFO:pyftpdlib:127.0.0.1:51453-[] FTP session opened (connect)
+INFO:pyftpdlib:127.0.0.1:51453-[] FTP session closed (disconnect).

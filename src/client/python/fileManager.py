@@ -1,8 +1,10 @@
 ####TO DO####
 
 class fileManager():
-    def __init__(self, dataManager):
-        pass
+    def __init__(self, dataManager, serverSession):
+        serverSession.login("user", "12345")
+        serverSession.cwd("files")
+        serverSession.dir()
 
     def fetch(fileName):
         pass

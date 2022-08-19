@@ -45,6 +45,9 @@ class dataManager():
         self.adjustmentsMade.append(2)
         return
 
+    def checkTimeStamps(self):
+        return
+
     @staticmethod #make static method to make accessible to other classes without instantiation
     def getFormattedDateTime():
         dateTimeString = datetime.now().strftime("%d/%m/%Y %H:%M:%S") #get current datetime and format into string DD/MM/YYY HH:MM:SS
